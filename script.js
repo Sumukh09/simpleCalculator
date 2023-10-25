@@ -15,3 +15,14 @@ function calculateResult() {
         display.value = 'Error';
     }
 }
+
+function backSpace()
+{
+    try{
+        display.value = display.value.toString().substring(0, display.value.length - 1);
+        // in this place we can also use after toString().slice(0,-1)    -1 means last index
+    }catch(error)
+    {
+        display.value = 'Error';
+    }
+}
